@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Fan CHIANG Portfolio</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&family=Open+Sans:wght@500&family=Roboto+Mono:wght@100&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f14dbee59e.js" crossorigin="anonymous"></script>
+
+    <!-- slick js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+
+
+    <style>
+        * {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .header div {
+            color: #444;
+            font-weight: bold;
+        }
+
+        .nav-link {
+            /* text-decoration: none; */
+            color: #444;
+            font-size: 8px;
+        }
+
+        h2 {
+            color: #444;
+            font-weight: bold;
+            border-bottom: 5px solid black;
+        }
+
+        .fixed-top.scrolled {
+            background-color: #fff !important;
+            transition: background-color 200ms linear;
+        }
+
+        .intro {
+            font-size: 14px;
+            margin-top: 35px;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+        }
+/* 
+        .card-ab:hover{
+            background-color: black;
+            color: rgb(192, 192, 77);
+        } */
+
+        .card-ab-text{
+            font-size: 14px;
+        }
+
+        .card-text {
+            font-size: 14px;
+        }
+
+        h5 {
+            font-size: 18px;
+        }
+
+        .exp {
+            font-size: 14px;
+            margin-top: 10px;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        .card {
+            border: none;
+        }
+
+        .card-img-top {
+            border-radius: 0px;
+        }
+
+        .btn-dark {
+            box-shadow: 3px 3px 5px rgb(212, 203, 203);
+            border: none;
+        }
+
+        .btn-dark:hover {
+            background: rgb(226, 226, 57);
+            color: #444;
+            border: none;
+            font-size: 1.1rem;
+        }
+
+
+        .ai:hover {
+            transform: scale(1.03);
+            transition: 0.5s;
+        }
+
+        h6 {
+            text-align: center;
+            margin-right: 1rem;
+            margin-top: .3rem;
+        }
+
+        .left_arrow {
+            position: absolute;
+            top: 35%;
+            left: -40px;
+        }
+
+        .left_arrow:hover {
+            font-size: 25px;
+            top: 33%;
+        }
+
+        .right_arrow {
+            position: absolute;
+            top: 35%;
+            right: -25px;
+        }
+
+        .right_arrow:hover {
+            font-size: 25px;
+            top: 33%;
+        }
+
+        .footer {
+            font-size: 6px;
+            background: lightgray;
+        }
+
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #888;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 8px;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Roboto Mono', monospace;
+        }
+
+        #myBtn:hover {
+            background-color: rgb(226, 226, 57);
+            color: #444;
+            font-size: 1.1rem;
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- header pic -->
+        <section>
+            <img class="my-0" src="./imgs/header_pic.jpg" width="100%" alt="">
+        </section>
+        <!-- header pic end -->
+
+        <!-- nav -->
+        <nav class="navbar navbar-expand-sm fixed-top text-uppercase" style="background:transparent;">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-3 mx-3" href="#">Fan Chiang</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">about</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ability">ability</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- nav end -->
+    </div>
+    <!-- header end -->
+
+    <!-- content -->
+    <div class="container justify-content-center">
+        <!-- about -->
+        <div id="about" class="row my-5">
+            <div class="title col-12 d-flex justify-content-center text-uppercase">
+                <h2>ABOUT</h2>
+            </div>
+            <div class="row row-col-2 row-col-md-1 justify-content-center">
+                <div class="my-pic col-lg-4 my-lg-5 d-flex justify-content-center">
+                    <div class="pic-bg"></div>
+                    <div>
+                        <img class="object-fit my-5 rounded" src="./imgs/profile.jpg" width="300" height="300"
+                            alt="profile">
+                    </div>
+                </div>
+                <div class="col-sm-10 col-lg-6 mx-lg-4 mt-lg-5 justify-content-center">
+                    <h4 class="text-uppercase">Fan CHIANG</h3>
+                        <p class="intro">
+                            外文系畢業，對事物充滿好奇，喜歡與不同人相處，嘗試不同的事物與可能性，重視時間管理，也喜歡解決問題。<br>
+                            <br>
+                            在接觸網頁程式設計之前，我是一名空服員，面對不同國籍的同事與旅客，需要良好的溝通技巧來傳遞正確訊息與互相了解，保持良好的團隊合作與互動，才能將團隊的價值發揮到最大，我很喜歡跟大家同心協力完成一趟班機任務，也希望我的努力能成為人們旅途中美好的一部分。<br>
+                            <br>
+                            因為疫情使工作量減少，多出來的時間接觸了程式設計，萌生轉職的念頭，進而報名了泰山職業訓練場為期半年的網頁程式設計課程，盼為人生展開新的篇章，也期待未來與工作與不同崗位的夥伴交流，一起互相學習成長。
+                        </p>
+                </div>
+            </div>
+        </div>
+        <!-- about end -->
+
+        <!-- ability -->
+        <div id="ability" class="row my-5">
+            <div class="title fs-2 col-12 d-flex justify-content-center text-uppercase">
+                <h2>ABILITY</h2>
+            </div>
+            <div class="row row-col-4 row-col-sm-2 justify-content-center my-5">
+                <div class="col-lg-2 col-sm-4 mx-lg-4 mx-sm-2">
+                    <div class="card-ab shadow p-3 mb-5 bg-body rounded text-center justify-content-center"
+                        style="width: 10rem;height: 13rem;">
+                        <h1 class="card-ab-title"><i class="fa-solid fa-display"></i></h1>
+                        <p class="card-ab-text lh-base">HTML5<br>CSS3<br>javascript<br>jQuery<br>Bootstrap</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 mx-lg-4 mx-sm-2">
+                    <div class="card-ab text-center justify-content-center shadow p-3 mb-5 bg-body rounded"
+                        style="width: 10rem;height: 13rem;">
+                        <h1 class="card-ab-title"><i class="fa-solid fa-code"></i></h1>
+                        <p class="card-ab-text lh-lg">PHP<br>MySQL</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 mx-lg-4 mx-sm-2">
+                    <div class="card-ab text-center justify-content-center shadow p-3 mb-5 bg-body rounded"
+                        style="width: 10rem;height: 13rem;">
+                        <h1 class="card-ab-title"><i class="fa-solid fa-paintbrush"></i></i></h1>
+                        <p class="card-ab-text lh-lg">Illustrator<br>Photoshop</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 mx-lg-4 mx-sm-2">
+                    <div class="card-ab text-center justify-content-center shadow p-3 mb-5 bg-body rounded"
+                        style="width: 10rem;height: 13rem;">
+                        <h1 class="card-ab-title"><i class="fa-solid fa-language"></i></h1>
+                        <p class="card-ab-text lh-lg">TOEIC 835<br>JLPT N2<br>Cantonese</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ability end -->
+
+        <!-- resume -->
+        <div id="resume" class="row my-5">
+            <div class="title fs-2 col-12 d-flex justify-content-center text-uppercase">
+                <h2>RESUME</h2>
+            </div>
+            <div class="row-col-lg-2 d-flex justify-content-center my-5">
+                <!-- eduction -->
+                <div class="col-lg-4 mx-5">
+                    <div class="mb-3">
+                        <h4>學習歷程</h4>
+                    </div>
+                    <div>
+                        <h5>PHP資料庫網頁設計班 / 泰山職業訓練場</h5>
+                        <div class="fs-6">2022/3-2022/9</div>
+                        <div class="exp">
+                            <p>參加泰山職業訓練場為期半年的後端程式相關課程，訓練期間培養了分析問題、解決問題的能力與持續成長的學習力。</p>
+                            <ul>
+                                <li>HTML5、CSS3、Bootstrap</li>
+                                <li>javascript、jQuery</li>
+                                <li>PHP、MySQL</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>英文系 / 淡江大學</h5>
+                        <div class="exp">
+                            <p>主修英美文學，其他相關課程內容包含商業英文、新聞英文、基礎口譯和翻譯課程</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- eduction end -->
+
+                <!-- work experience -->
+                <div class="col-lg-5 mx-5">
+                    <div class="mb-3">
+                        <h4>工作經歷</h4>
+                    </div>
+                    <div>
+                        <h5>空服員 / 外商航空</h5>
+                        <div class="exp">
+                            <p>除了提供旅客賓至如歸的服務外，最重要的職務是維護客艙安全</p>
+                            <ul>
+                                <li>維護與乘客之間的關係，提供優質機上服務，理解乘客需求及解決乘客投訴、為有特殊需求的旅客提供額外協助</li>
+                                <li>在特殊情況下安撫乘客情緒，維持機艙秩序，給予適當幫助和基本醫療協助</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h5>使用者服務分析師 / 外商遊戲公司</h5>
+                        <div class="exp">
+                            <ul>
+                                <li>使用線上系統提供良好的中/英文文字服務</li>
+                                <li>經由調查及理解使用者遇到的困難，給予快速、有效和完善的資訊來幫助使用者解決問題</li>
+                                <li>快速掌握工作程序及資訊的變換</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- work experience end -->
+
+            </div>
+        </div>
+        <!-- resume end -->
+
+        <!-- portfolio -->
+        <div id="portfolio" class="row d-flex my-5 text-uppercase">
+            <div class="title fs-2 col-12 d-flex justify-content-center text-uppercase">
+                <h2>portfolio</h2>
+            </div>
+            <h5 class="text-center mt-5 mb-4">前端網頁開發 / 後端程式語言</h5>
+            <div class="row row-col-lg-2 row-col-sm-1 justify-content-center">
+                <div class="card col-lg-4 mx-4 shadow p-3 mb-3 bg-body rounded" style="width: 18rem;">
+                    <img src="./imgs/calendar.jpg" class="card-img-top" alt="calendar">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title">萬年曆</h5>
+                        <p class="card-text lh-lg">
+                            以陣列方式撰寫的萬年曆系統<br>
+                            點擊左右箭頭可以切換前後兩個月份，每月搭配不同圖片<br>
+                            左上方加入搜尋欄，輸入年月轉跳到指定年/月份
+                        </p>
+                        <div class="d-flex justify-content-end">
+                            <a href="http://220.128.133.15/s1110206/calendar/" target="_blank"
+                                class="btn btn-dark position-absolute bottom-0 end-0">GO!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 mx-4 shadow p-3 mb-3 bg-body rounded" style="width: 18rem;">
+                    <img src="./imgs/vote.jpg" class="card-img-top" alt="calendar">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title">投票系統</h5>
+                        <p class="card-text lh-lg">
+                            會員登入註冊，登入後可以投票<br>
+                            未登入的使用者只可以看到投票結果<br>
+                            會員中心編輯會員資料<br>
+                            特定帳號可進入後台，管理投票系統
+                        </p>
+                        <a href="http://220.128.133.15/s1110206/vote/" target="_blank"
+                            class="btn btn-dark vote-btn position-absolute bottom-0 end-0">GO!</a>
+                    </div>
+                </div>
+            </div>
+            <!-- photoshop -->
+            <div class="row row-col-lg-2 row-col-sm-1 justify-content-center">
+                <h5 class="text-center mt-5 mb-4 fw-bolder">Photoshop</h5>
+                <div class="card col-lg-4 mx-4 shadow p-3 mb-3 bg-body rounded" style="width: 18rem;">
+                    <img src="./imgs/calendarfortiger.jpg" class="card-img-top" alt="calendar">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title text-center">虎年年曆</h5>
+                        <div class="d-flex justify-content-end">
+                            <a href="http://220.128.133.15/s1110206/photoshop/calendarfortiger.jpg" target="_blank"
+                                class="btn btn-dark position-absolute bottom-0 end-0">GO!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card col-lg-4 mx-4 shadow p-3 mb-3 bg-body rounded" style="width: 18rem;">
+                    <img src="./imgs/travelposter.jpg" class="card-img-top" alt="calendar">
+                    <div class="card-body position-relative">
+                        <h5 class="card-title text-center">旅遊宣傳海報</h5>
+                        <div class="d-flex justify-content-end">
+                            <a href="http://220.128.133.15/s1110206/photoshop/travelposter.jpg" target="_blank"
+                                class="btn btn-dark position-absolute bottom-0 end-0">GO!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- photoshop end -->
+
+            <!-- AI slider -->
+            <h5 class="text-center mt-5 fw-bolder">Illustrator</h5>
+            <div class="container p-4 mb-5">
+                <div class="slider">
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/001_whale.png" alt="">
+                        <h6>whale</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/002_penguin.png" alt="">
+                        <h6>penguin</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/003_rhino.png" alt="">
+                        <h6>rhino</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/004_bat.png" alt="">
+                        <h6>bat</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/005_turtle.png" alt="">
+                        <h6>turtle</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/006_butterfly.png" alt="">
+                        <h6>butterfly</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/007_parrot.png" alt="">
+                        <h6>parrot</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/008_squirrel.png" alt="">
+                        <h6>squirrel</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/009_rooster.png" alt="">
+                        <h6>rooster</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/010_seaorse.png" alt="">
+                        <h6>seaorse</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/011_walrus.png" alt="">
+                        <h6>walrus</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/012_goat.png" alt="">
+                        <h6>goat</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/013_elephant.png" alt="">
+                        <h6>elephant</h6>
+                    </div>
+                    <div>
+                        <img class="ai" src="./ai30/014_kangaroo.png" alt="">
+                        <h6>kangaroo</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/015_zebra.png" alt="">
+                        <h6>squirrel</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/016_gorilla.png" alt="">
+                        <h6>gorilla</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/017_chameleon.png" alt="">
+                        <h6>chameleon</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/018_dog.png" alt="">
+                        <h6>dog</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/019_fox.png" alt="">
+                        <h6>fox</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/020_shark.png" alt="">
+                        <h6>shark</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/021_cat.png" alt="">
+                        <h6>cat</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/022_owl.png" alt="">
+                        <h6>owl</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/023_hummingbird.png" alt="">
+                        <h6>hummingbird</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/024_bear.png" alt="">
+                        <h6>bear</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/025_flamingo.png" alt="">
+                        <h6>flamingo</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/026_mouse.png" alt="">
+                        <h6>mouse</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/027_duck.png" alt="">
+                        <h6>duck</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/028_dolphin.png" alt="">
+                        <h6>dolphin</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img class="ai" src="./ai30/029_rabbit.png" alt="">
+                        <h6>rabbit</h6>
+                    </div>
+                    <div class="ai-box">
+                        <img src="./ai30/030_hippo.png" alt="">
+                        <h6>hippo</h6>
+                    </div>
+                </div>
+            </div>
+            <!-- AI slider end -->
+
+        </div>
+        <!-- portfolio end -->
+
+
+        <div id="contact" class="row my-5">
+            <div class="title fs-2 col-12 d-flex justify-content-center text-uppercase">
+                <h2>CONTACT</h2>
+            </div>
+            <div class="row row-col-2 row-col-sm-1 mb-5 justify-content-center text-uppercase">
+                <div class="col-lg-4 col-sm-8 mx-lg-4 mt-lg-5 my-sm-5 justify-content-center">
+                    <h5 class="mb-4">Where to find me</h5>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29529.848598251556!2d113.90175737653558!3d22.307099010467308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3403e2f3cc46c69d%3A0xf9f590821892369e!2z6aaZ5riv5ZyL6Zqb5qmf5aC0!5e0!3m2!1szh-TW!2stw!4v1658657541629!5m2!1szh-TW!2stw"
+                        width="300" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-sm-8 col-lg-5 mx-lg-4 mt-lg-5 justify-content-center">
+                    <h5 class="mb-4">Leave me a message</h5>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name</label>
+                        <input class="form-control" type="text" id="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">email</label>
+                        <input class="form-control" type="email" id="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="msg" class="form-label">message</label>
+                        <textarea class="form-control" id="msg" cols="20" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content end -->
+
+    <!-- footer -->
+    <section class="footer d-flex justify-content-center align-items-center mt-5">
+        <p class="text-center lh-lg my-2">
+            © Copyright 2022. All Rights Reserved<br>
+            Designed by Fan, CHIANG
+        </p>
+    </section>
+    <!-- footer end -->
+
+
+    <!-- back to top -->
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+        integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous">
+    </script>
+
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $(document).scroll(function () {
+                var $nav = $(".fixed-top");
+                $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js">
+    </script>
+
+    <script type="text/javascript">
+        $('.slider').slick({
+            infinite: true,
+            slidesToShow: 5,
+            slidesToScroll: 5,
+            prevArrow: '<i class="fa-solid fa-angle-left  left_arrow"></i>',
+            nextArrow: '<i class="fa-solid fa-angle-right  right_arrow"></i>',
+        });
+    </script>
+
+</body>
+
+</html>
